@@ -24,7 +24,6 @@ class Model extends CI_Model{
         $this->db->from('demo_data')->where('id', $id);
         $query = $this->db->get();
         return $query->result();
-
     }
 
     public function update($table, $data, $id){
